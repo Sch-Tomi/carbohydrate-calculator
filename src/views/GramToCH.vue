@@ -15,6 +15,7 @@
                                 label="Termék súlya"
                                 placeholder="Add meg a súlyt"
                                 append="g"
+                                type="number"
                             />
                         </CCol>
                         <CCol sm="12" lg="6">
@@ -23,6 +24,7 @@
                                 label="CH"
                                 placeholder="Add meg a CH tartalmat"
                                 append="g"
+                                type="number"
                             />
                         </CCol>
                     </CRow>
@@ -33,6 +35,7 @@
                                 label="Számolandó súlya"
                                 placeholder="Add meg a súlyt"
                                 append="g"
+                                type="number"
                             />
                         </CCol>
                         <CCol sm="12" lg="6">
