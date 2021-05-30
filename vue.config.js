@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: process.env.NODE_ENV === "production" ? "/carbohydrate-calculator/" : "/",
     lintOnSave: false,
     runtimeCompiler: true,
     configureWebpack: {
@@ -10,7 +11,7 @@ module.exports = {
     transpileDependencies: ["@coreui/utils", "@coreui/vue"],
     pages: {
         index: {
-            entry: 'src/main.js',
+            entry: "src/main.js",
             title: "CH Calculator"
         }
     }
