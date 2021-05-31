@@ -19,6 +19,12 @@ export default [
                 name: "CH to Gram",
                 to: "/ch-to-gram",
                 icon: "cil-arrow-thick-right"
+            },
+            {
+                _name: "CSidebarNavItem",
+                name: "Meal Calculator",
+                to: "/meal-calculator",
+                icon: "cil-dinner"
             }
         ]
     }

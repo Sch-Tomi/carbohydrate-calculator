@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 
 import GramToCH from "../views/GramToCH";
 import CHToGram from "../views/CHToGram";
+import MealCalulator from "../views/MealCalulator";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
         path: "/ch-to-gram",
         name: "Gram",
         component: CHToGram
+    },
+    {
+        path: "/meal-calculator",
+        name: "meal-calculator",
+        component: MealCalulator
     }
 ];
 
