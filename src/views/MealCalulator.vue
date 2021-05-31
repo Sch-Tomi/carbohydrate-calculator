@@ -37,6 +37,7 @@
                             <CCol col="4 verticalCenter"><label>Alapanyag</label></CCol>
                             <CCol col="8 verticalCenter">
                                 <CInput
+                                    class="w-100"
                                     placeholder="Add meg a nevét"
                                     :value="item.name"
                                     @input="itemAttrChange('name', item.id, $event)"
@@ -48,6 +49,7 @@
                             <CCol col="4 verticalCenter"><label>Súlya</label></CCol>
                             <CCol col="8 verticalCenter">
                                 <CInput
+                                    class="w-100"
                                     placeholder="Add meg a súlyát"
                                     :value="item.weight"
                                     @input="itemAttrChange('weight', item.id, $event)"
@@ -65,6 +67,7 @@
                             </CCol>
                             <CCol col="8 verticalCenter">
                                 <CInput
+                                    class="w-100"
                                     placeholder="Add meg a CH tartalmat"
                                     :value="item.referenceCH"
                                     @input="itemAttrChange('referenceCH', item.id, $event)"
@@ -77,11 +80,16 @@
                         <CRow>
                             <CCol col="4 verticalCenter"><label>Összes CH tartalma</label></CCol>
                             <CCol col="8 verticalCenter">
-                                <CInput placeholder="" :value="item.sumCH" append="g" />
+                                <CInput
+                                    class="w-100"
+                                    placeholder=""
+                                    :value="item.sumCH"
+                                    append="g"
+                                />
                             </CCol>
                         </CRow>
                     </CCol>
-                    <CCol col="12 pb-3">
+                    <CCol col="12">
                         <CButton
                             :color="'danger'"
                             class="m-2 float-right"
@@ -94,7 +102,7 @@
                 </CRow>
             </div>
 
-            <CRow class="w-100">
+            <CRow class="summarize w-100">
                 <CCol>
                     <CCallout color="info">
                         <small class="text-muted">Összes CH: </small><br />
@@ -166,8 +174,8 @@ export default {
                 }
             });
         },
-        deleteItem(item){
-            Item.delete(item.id)
+        deleteItem(item) {
+            Item.delete(item.id);
         }
     }
 };
@@ -189,11 +197,20 @@ label {
 }
 
 .listItem {
-    padding: 10px 15px;
+    padding: 15px;
     border-bottom: 1px solid #bbbbbb;
+}
+
+.listItem:last-of-type {
+    border-bottom: none;
 }
 
 .listItem:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+.summarize{
+    margin-top: 10px;
+    border-top: 4px double  #bbbbbb;
 }
 </style>
