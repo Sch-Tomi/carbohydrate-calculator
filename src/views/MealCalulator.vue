@@ -4,6 +4,14 @@
             <h2>Készétel Kalkulátor</h2>
         </CCardHeader>
         <CCardBody>
+            <CRow>
+                <CCol>
+                    <CAlert color="info">
+                        Itt tudod kiszámolni egy étel CH tartalmát. Csak vedd fel a + ikonnal az
+                        alapanyogat és add meg az adataikat.
+                    </CAlert>
+                </CCol>
+            </CRow>
             <div class="list">
                 <CRow class="listItem flex-column" v-for="item in items" :key="item.id">
                     <CCol col="12 pb-3">
@@ -72,6 +80,16 @@
                                 <CInput placeholder="" :value="item.sumCH" append="g" />
                             </CCol>
                         </CRow>
+                    </CCol>
+                    <CCol col="12 pb-3">
+                        <CButton
+                            :color="'danger'"
+                            class="m-2 float-right"
+                            shape="pill"
+                            @click="deleteItem(item)"
+                        >
+                            <CIcon name="cilTrash" />
+                        </CButton>
                     </CCol>
                 </CRow>
             </div>
@@ -147,6 +165,9 @@ export default {
                     [attr]: value
                 }
             });
+        },
+        deleteItem(item){
+            Item.delete(item.id)
         }
     }
 };
@@ -169,6 +190,7 @@ label {
 
 .listItem {
     padding: 10px 15px;
+    border-bottom: 1px solid #bbbbbb;
 }
 
 .listItem:nth-child(even) {

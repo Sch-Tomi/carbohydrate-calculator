@@ -9,6 +9,13 @@
                 </CCardHeader>
                 <CCardBody>
                     <CRow>
+                        <CCol>
+                            <CAlert color="info">
+                                Itt tudod kiszámolni, hogy hány gramm termék tartalmazza a megadott CH-t.
+                            </CAlert>
+                        </CCol>
+                    </CRow>
+                    <CRow>
                         <CCol sm="12" lg="6">
                             <CInput
                                 v-model="referenceWeight"
@@ -40,7 +47,6 @@
                                 append="g"
                                 :isValid="isValid"
                                 disabled
-
                             />
                         </CCol>
                         <CCol sm="12" lg="6">

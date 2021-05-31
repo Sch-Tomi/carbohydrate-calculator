@@ -10,13 +10,13 @@ export default [
             },
             {
                 _name: "CSidebarNavItem",
-                name: "Gram to CH",
+                name: "Gramm számoló",
                 to: "/gram-to-ch",
                 icon: "cil-arrow-thick-left"
             },
             {
                 _name: "CSidebarNavItem",
-                name: "CH to Gram",
+                name: "CH számoló",
                 to: "/ch-to-gram",
                 icon: "cil-arrow-thick-right"
             },

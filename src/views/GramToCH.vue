@@ -9,6 +9,13 @@
                 </CCardHeader>
                 <CCardBody>
                     <CRow>
+                        <CCol>
+                            <CAlert color="info">
+                                Itt tudod kiszámolni, hogy addott súlyú termék mennyi CH-t tartalmaz.
+                            </CAlert>
+                        </CCol>
+                    </CRow>
+                    <CRow>
                         <CCol sm="12" lg="6">
                             <CInput
                                 v-model="referenceWeight"
