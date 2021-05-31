@@ -4,7 +4,7 @@ export default [
         _children: [
             {
                 _name: "CSidebarNavItem",
-                name: "Home",
+                name: "Kezdőlap",
                 to: "/",
                 icon: "cil-home"
             },
@@ -22,7 +22,7 @@ export default [
             },
             {
                 _name: "CSidebarNavItem",
-                name: "Meal Calculator",
+                name: "Készétel Kalkulátor",
                 to: "/meal-calculator",
                 icon: "cil-dinner"
             }

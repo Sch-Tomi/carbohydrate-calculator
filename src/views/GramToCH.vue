@@ -3,9 +3,7 @@
         <CCol col="12">
             <CCard>
                 <CCardHeader>
-                    Gram
-                    <CIcon name="cilArrowRight" />
-                    CH
+                    <h2>Gramm számoló</h2>
                 </CCardHeader>
                 <CCardBody>
                     <CRow>
